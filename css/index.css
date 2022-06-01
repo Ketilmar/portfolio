@@ -1,0 +1,30 @@
+#header {
+    background: lightcyan;
+    /* display: block; */
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+#nav {
+    background: lightpink;
+    /* display: block; */
+    /* flex-direction: column; */
+
+}
+
+#nav ul {
+    background: lightyellow;
+    /* flex-direction: column; */
+    float: right;
+    display: block;
+
+}
+
+.content {
+    background: lightgray;
+}
+
+.centered {
+    background: lightskyblue;
+    text-align: center;
+}
