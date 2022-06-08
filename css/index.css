@@ -1,7 +1,12 @@
 h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bolder;
-    font-size: 2em;
+    font-size: 3em;
+}
+
+h3 {
+    margin: 5px;
+    text-align: center;
 }
 
 
@@ -47,11 +52,11 @@ h1 {
     clear: both;
 }
 
-.centered h1 {
+.centered > h1 {
     margin-bottom: 0.5em ;
 }
 
-.centered p a {
+.centered > p > a {
     font-size: 1.5em;
     /* margin-right: 1em; */
 }
@@ -59,16 +64,35 @@ h1 {
 .bio-list {
     list-style-type: none;
     margin: 10%;
-    padding: 0;
+    padding: 10px;
+    background: rgb(249, 244, 244);
 }
 
-.bio-list li {
+.bio-list > li {
     display: flex;
-    border-top: 0.063rem solid rgba(0,0,0,0.2);;
+    margin: 10px;
+    /* border-bottom: 10px; */
+    padding-top: 10px;
+    border-top: 0.070rem solid rgba(0,0,0,0.2);;
 }
 
-.bio-list p {
+.bio-list > p {
     padding: 0 0 0 1em;;
+}
+
+.bio-list-cont {
+    width: 100%;
+    text-align: left;
+    margin: 0 20px 0 20px;
+}
+
+.bio-list-cont > p {
+    width: 100%;
+}
+
+.bio-list-cont > img {
+    /* vertical-align: bottom; */
+    margin-top: 5px;
 }
 
 
