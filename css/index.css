@@ -1,3 +1,24 @@
+/* Light mode */
+:root {
+    --body-bg: #FFFFFF;
+    --body-color: #000000;
+ }
+ 
+ /* Dark mode */
+ @media (prefers-color-scheme: dark) {
+    :root {
+        --body-bg: #000000;
+        --body-color: #FFFFFF;
+    }
+ }
+
+  /* body {
+    background: var(--body-bg);
+    color: var(--body-color);
+ }  */
+
+
+
 h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bolder;
@@ -35,14 +56,16 @@ h3 {
 }
 
 
-#nav ul li {
-    display: inline;
+#nav ul a {
+    /* display: inline; */
+    padding: 1em;
 }
 
 
 .content {
     /* background: lightgray; */
     /* margin: 5em; */
+    
 }
 
 .centered {
@@ -50,6 +73,7 @@ h3 {
     text-align: center;
     margin: 0 auto;
     clear: both;
+    
 }
 
 .centered > h1 {
@@ -59,6 +83,7 @@ h3 {
 .centered > p > a {
     font-size: 1.5em;
     /* margin-right: 1em; */
+    padding: 0.5em;
 }
 
 .bio-list {
@@ -66,6 +91,7 @@ h3 {
     margin: 10%;
     padding: 10px;
     background: rgb(249, 244, 244);
+    
 }
 
 .bio-list > li {
@@ -77,7 +103,8 @@ h3 {
 }
 
 .bio-list > p {
-    padding: 0 0 0 1em;;
+    padding: 0 0 0 1em;
+    
 }
 
 .bio-list-cont {
@@ -90,9 +117,19 @@ h3 {
     width: 100%;
 }
 
-.bio-list-cont > img {
+.bio-list > li > span {
+    /* width: 40%; */
+    /* height: 70%; */
+}
+.bio-list > li > span > img {
     /* vertical-align: bottom; */
-    margin-top: 5px;
+    /* margin-top: 5px; */
+    /* width: 60%;
+    height: 100%; */
+}
+
+footer {
+
 }
 
 
