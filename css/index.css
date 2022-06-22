@@ -7,15 +7,20 @@
  /* Dark mode */
  @media (prefers-color-scheme: dark) {
     :root {
-        --body-bg: #000000;
-        --body-color: #FFFFFF;
+        --body-bg: #050230;
+        --body-color: #FFFFFF;   
+        --text-color: #DFC2F2;
+        --text-color-p: #ece2e2;
+        --background-biolist: #050230;
+        --color-nav: #DFC2F2;
     }
  }
 
-  /* body {
+  body {
     background: var(--body-bg);
     color: var(--body-color);
- }  */
+    
+ } 
 
 
 
@@ -59,6 +64,7 @@ h3 {
 #nav ul a {
     /* display: inline; */
     padding: 1em;
+    color: var(--color-nav);
 }
 
 
@@ -84,6 +90,8 @@ h3 {
     font-size: 1.5em;
     /* margin-right: 1em; */
     padding: 0.5em;
+    color: var(--text-color);
+
 }
 
 .bio-list {
@@ -91,15 +99,17 @@ h3 {
     margin: 10%;
     padding: 10px;
     background: rgb(249, 244, 244);
+    background: var(--background-biolist);
     
 }
 
 .bio-list > li {
     display: flex;
+    align-items: center;
     margin: 10px;
     /* border-bottom: 10px; */
     padding-top: 10px;
-    border-top: 0.070rem solid rgba(0,0,0,0.2);;
+    border-top: 0.070rem solid rgba(0,0,0,0.2);
 }
 
 .bio-list > p {
@@ -115,17 +125,23 @@ h3 {
 
 .bio-list-cont > p {
     width: 100%;
+    color: var(--text-color-p);
+}
+
+.bio-list-cont > img {
+    height: 10%;
+    width: 10%;
 }
 
 .bio-list > li > span {
-    /* width: 40%; */
-    /* height: 70%; */
+    width: 100%;
+    height: 100%;
 }
 .bio-list > li > span > img {
     /* vertical-align: bottom; */
     /* margin-top: 5px; */
-    /* width: 60%;
-    height: 100%; */
+    width: 80%;
+    /* height: 100%; */
 }
 
 footer {
